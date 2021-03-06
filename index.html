@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assest/normalize.css">
+    <link rel="stylesheet" href="assest/style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <form action="#" id="form" class="form_body">
+                <h1 class="form_title"></h1>
+                <div class="form_item">
+                    <label for="forName" class="form_label">Имя*</label>
+                    <input id="forName" type="text" name="name" class="form_input _req">
+                </div>
+                <div class="form_item">
+                    <label for="forEmail" class="form_label">Email*</label>
+                    <input id="forEmail" type="text" name="email" class="form_input _req _email">
+                </div>
+
+                <div class="form_item">
+                    <div class="form_label">Левша или правша?</div>
+                        <div class="options">
+                            <div class="options_item">
+                                <input  type="radio" checked name="hand" value="right" id="forRaightH" class="options_input">
+                                <label for="forRaightH" class="options_label"><span>Правша</span></label>
+                            </div>
+                            <div class="options_item">
+                                <input  type="radio" name="hand" value="left" id="forLeftH" class="options_input">
+                                <label for="forLeftH" class="options_label"><span>Левша</span></label>
+                            </div>
+                        </div>
+                </div>
+                <div class="form_item">
+                    <label for="forMessage" class="form_label">Сообщение</label>
+                    <textarea name="Message" id="forMessage" cols="30" rows="2"></textarea>
+                </div>
+                <div class="form_item">
+                    <div class="form_label">Пиркрепить фото</div>
+                    <div class="file">
+                        <div class="file_item">
+                            <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image" class="file_input">
+                            <div class="file_button">Выбрать</div>
+                        </div>
+                            <div class="file_preview" id="formPreview"></div>
+                    </div>
+                </div>
+                        <div class="form_item">
+                            <div class="checkbox">
+                                <input checked id="forAgreement" type="checkbox" name="agreement" class="checkbox_input _req">
+                                <label for="forAgreement" class="сheckbox_label">Соглашусь</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="form_button">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="assest/animation.js"></script>
+</body>
+</html>
